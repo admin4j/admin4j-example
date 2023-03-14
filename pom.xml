@@ -32,7 +32,7 @@
         <dependency>
             <groupId>com.admin4j</groupId>
             <artifactId>admin4j-spring-boot-starter-lock</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.1</version>
         </dependency>
         <dependency>
             <groupId>com.admin4j</groupId>
