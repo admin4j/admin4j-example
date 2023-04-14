@@ -1,8 +1,8 @@
 package com.admin4j.dLock.controller;
 
-import com.admin4j.lock.annotation.DistributedLock;
-import com.admin4j.lock.annotation.Idempotent;
-import com.admin4j.web.pojo.R;
+import com.admin4j.framework.lock.annotation.DistributedLock;
+import com.admin4j.framework.lock.annotation.Idempotent;
+import com.admin4j.framework.web.pojo.R;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.admin4j</groupId>
         <artifactId>framework</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.4</version>
     </parent>
     <groupId>com.admin4j</groupId>
     <artifactId>admin4j-example</artifactId>
@@ -31,13 +31,15 @@
         </dependency>
         <dependency>
             <groupId>com.admin4j</groupId>
-            <artifactId>admin4j-spring-boot-starter-lock</artifactId>
-            <version>0.0.4</version>
+            <artifactId>lock-spring-boot-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>com.admin4j</groupId>
-            <artifactId>admin4j-spring-boot-starter-web</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <artifactId>web-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.admin4j</groupId>
+            <artifactId>oss-spring-boot-starter</artifactId>
         </dependency>
     </dependencies>
 </project>
