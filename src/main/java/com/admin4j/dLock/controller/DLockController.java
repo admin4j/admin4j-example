@@ -2,6 +2,7 @@ package com.admin4j.dLock.controller;
 
 import com.admin4j.framework.lock.annotation.DistributedLock;
 import com.admin4j.framework.lock.annotation.Idempotent;
+import com.admin4j.framework.lock.util.DistributedLockUtil;
 import com.admin4j.framework.web.pojo.R;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -43,6 +44,38 @@ public class DLockController {
     public R Idempotent(String name, Integer id) throws InterruptedException {
 
         Thread.sleep(30000);
+        return R.ok();
+    }
+
+    @GetMapping("util")
+    //@DistributedLock(tryLock = true, user = true)
+    public R util(String name, Integer id) throws InterruptedException {
+
+        DistributedLockUtil.lock("util：" + id, () -> {
+            System.out.println("i get the lock   = " + name);
+            try {
+                Thread.sleep(30000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        });
+
+        return R.ok();
+    }
+
+    @GetMapping("tryLockutil")
+    //@DistributedLock(tryLock = true, user = true)
+    public R tryLockutil(String name, Integer id) throws InterruptedException {
+
+        DistributedLockUtil.tryLockWithError("util：" + id, () -> {
+            System.out.println("i get the lock   = " + name);
+            try {
+                Thread.sleep(30000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        });
+
         return R.ok();
     }
 }
