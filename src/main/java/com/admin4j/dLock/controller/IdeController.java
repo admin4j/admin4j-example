@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2023/3/13 14:10
  */
 @RestController
-@Idempotent
 public class IdeController {
 
     @GetMapping("ide")

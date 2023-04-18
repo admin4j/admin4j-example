@@ -22,12 +22,18 @@ public class OssTest {
     OssTemplate ossTemplate;
 
     @Test
+    /**
+     * 创建 Bucket
+     */
     public void testCreateBucket() {
 
         ossTemplate.createBucket("oss-template");
     }
 
     @Test
+    /**
+     * 获取所有Bucket
+     */
     public void testGetAllBuckets() {
 
         List<Bucket> allBuckets = ossTemplate.getAllBuckets();
@@ -35,6 +41,9 @@ public class OssTest {
     }
 
     @Test
+    /**
+     * 上传文件
+     */
     public void testPut() throws IOException {
 
         FileInputStream fileInputStream = new FileInputStream("C:\\Users\\andanyang\\Downloads\\012408-167976504839ee.jpg");
@@ -43,6 +52,9 @@ public class OssTest {
     }
 
     @Test
+    /**
+     * 获取文件
+     */
     public void testGet() throws IOException {
 
         String objectURL = ossTemplate.getObjectURL("oss-template", "test/Test.jpg", 1, TimeUnit.DAYS);

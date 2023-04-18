@@ -11,3 +11,7 @@ admin4j:
     secret-key: zeSSPz3WC3Wn4zBZsYtxK9YXhZ7Hjnnv
     bucket-name: oss-template
     enable: true
+
+  zookeeper:
+    connect-string: 192.168.1.13:2181,192.168.1.13:2182,192.168.1.13:2183
+    namespace: D_LOCK

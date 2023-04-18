@@ -14,8 +14,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class DLockController {
 
     @GetMapping("testDLock")
-    @DistributedLock(tryLock = true, value = "'testDLock'+#id", user = true)
+    @DistributedLock(tryLock = false, value = "'testDLock:'+#id", user = true)
     public R testDLock(String name, Integer id) throws InterruptedException {
+
+        Thread.sleep(30000);
+        return R.ok();
+    }
+
+    @GetMapping("tryLock")
+    @DistributedLock(tryLock = true, value = "'tryLock:'+#id", user = true)
+    public R tryLock(String name, Integer id) throws InterruptedException {
 
         Thread.sleep(30000);
         return R.ok();
