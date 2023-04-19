@@ -40,8 +40,7 @@ public class DLockController {
     }
 
     @GetMapping("Idempotent")
-    @Idempotent(tryLock = true, key = "Idempotent")
-    //@DistributedLock(tryLock = true, user = true)
+    @Idempotent(tryLock = true, key = "'Idempotent'+#id")
     public R Idempotent(String name, Integer id) throws InterruptedException {
 
         Thread.sleep(30000);
