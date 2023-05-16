@@ -1,6 +1,5 @@
 package com.admin4j.dLock.controller;
 
-import com.admin4j.framework.lock.RedissonLockExecutor;
 import com.admin4j.framework.lock.annotation.DistributedLock;
 import com.admin4j.framework.lock.annotation.Idempotent;
 import com.admin4j.framework.lock.util.DistributedLockUtil;
@@ -16,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DLockController {
 
     @GetMapping("testDLock")
-    @DistributedLock(tryLock = false, value = "'testDLock:'+#id", user = true, executor = RedissonLockExecutor.class)
+    @DistributedLock(tryLock = false, value = "'testDLock:'+#id", user = true)
     public R testDLock(String name, Integer id) throws InterruptedException {
 
         Thread.sleep(30000);
