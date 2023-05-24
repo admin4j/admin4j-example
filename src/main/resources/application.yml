@@ -2,6 +2,13 @@ spring:
   redis:
     host: 192.168.1.11
     database: 2
+  elasticsearch:
+    uris:
+      - http://192.168.1.13:9200
+
+logging:
+  level:
+    org.springframework.data.elasticsearch.client.WIRE: TRACE
 
 
 admin4j:
