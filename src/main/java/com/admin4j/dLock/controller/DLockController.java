@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2023/3/13 14:10
  */
 @RestController
+@DistributedLock("DLockController")
 public class DLockController {
 
     @GetMapping("testDLock")
