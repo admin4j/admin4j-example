@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.admin4j.framework</groupId>
+        <artifactId>admin4j-example</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.admin4j.framework.example</groupId>
+    <artifactId>admin4j-lock</artifactId>
+    <packaging>jar</packaging>
+
+    <name>admin4j-lock</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.admin4j.common</groupId>
+            <artifactId>admin4j-common-spring-web</artifactId>
+            <version>0.9.7-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.admin4j.framework</groupId>
+            <artifactId>web-spring-boot-starter</artifactId>
+            <version>0.9.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.admin4j</groupId>
+            <artifactId>lock-spring-boot-starter</artifactId>
+        </dependency>
+    </dependencies>
+</project>
