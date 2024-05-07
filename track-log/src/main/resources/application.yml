@@ -1,0 +1,17 @@
+server:
+  tomcat:
+    threads:
+      max: 2
+      min-spare: 1
+
+
+admin4j:
+  trace-log:
+    header-span-id: x-span-id
+    header-trace-id: trace-id
+    span-id: spanId
+    trace-id: traceId
+  async:
+    core-pool-size: 1
+    max-pool-size: 2
+
