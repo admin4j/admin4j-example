@@ -79,11 +79,11 @@ public class TrackController {
         log.info("Track: {}", contextPath);
 
         Thread currented = Thread.currentThread();
-        System.out.println("currented = " + currented);
+        //System.out.println("currented = " + currented);
         executor.execute(() -> {
 
             Thread subThread = Thread.currentThread();
-            System.out.println("subThread = " + subThread);
+            //System.out.println("subThread = " + subThread);
             log.info("executor1: {}", contextPath);
             try {
                 Thread.sleep(1000);
