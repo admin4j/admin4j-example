@@ -11,6 +11,7 @@
     <modules>
         <module>admin4j-lock</module>
         <module>track-log</module>
+        <module>alert</module>
     </modules>
 
     <properties>

@@ -1,0 +1,4 @@
+admin4j:
+  alert:
+    qy-wei-xin-webhook-url: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=1e82d30b-2e64-417a-af06-3ff8e4cda649
+    enable: true
