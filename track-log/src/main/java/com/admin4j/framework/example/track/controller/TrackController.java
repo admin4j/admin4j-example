@@ -52,6 +52,8 @@ public class TrackController {
 
     @GetMapping("trackService")
     public String trackService() {
+
+        log.info("TrackService");
         trackService.test();
 
         return "trackService";
