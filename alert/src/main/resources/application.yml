@@ -2,3 +2,5 @@ admin4j:
   alert:
     qy-wei-xin-webhook-url: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=1e82d30b-2e64-417a-af06-3ff8e4cda649
     enable: true
+    ding-talk-webhook-url: https://oapi.dingtalk.com/robot/send?access_token=61122ec063a414ffc7b91be27e08a207f36601118ff5832cdcb1b6fd5a2f3468
+    ding-talk-secret: SEC3dcd903e34b40ebd5ea87d3846e2fafd4aaff817e069b1b360aca74451f9a54f

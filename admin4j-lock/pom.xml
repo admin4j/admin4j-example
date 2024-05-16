@@ -28,7 +28,7 @@
             <artifactId>web-spring-boot-starter</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.admin4j</groupId>
+            <groupId>com.admin4j.framework.lock</groupId>
             <artifactId>lock-spring-boot-starter</artifactId>
         </dependency>
     </dependencies>

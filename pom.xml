@@ -16,7 +16,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <admin4j-dependencies.version>0.9.8-SNAPSHOT</admin4j-dependencies.version>
+        <admin4j-dependencies.version>0.10.1</admin4j-dependencies.version>
     </properties>
 
     <dependencies>
